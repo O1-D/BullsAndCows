@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulls & Cows</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- --------------------------------------------------------------------- -->
+  <body>
+    <div class="wraper">
+    <!-- --------------------------------------------------------------------- -->
+      <header class="header">
+        <div class="header__container">
+          <img class="header__img-img" src="10967.jpg" alt="bulls and cows image">
+
+            <div class="header__btns">
+              <button class="header__btn-new-game btn">Нова гра</button>
+              <button class="header__btn-rules btn">Правила гри</button>
+            </div>
+            <div class="header__score-container">
+              <div class="header__score">
+                Кількість ходів: <span class="header__score-span"></span>
+              </div>
+              <div class="header__score-best-result">
+                Кращий результат: <span class="header__score-best-result-span"></span>
+              </div> 
+            </div>
+
+        </div>
+      </header>
+    <!-- --------------------------------------------------------------------- -->
+      <main class="main">
+        <div class="main__container">
+          <div class="main__secret-number">????</div>
+          
+          <div class="main__input">
+            <label><input type="number" class="main__input-from-user" /></label>
+            <button class="main__btn-check btn">Перевірити</button>
+          </div>
+
+          <div class="main__message-for-user"></div>
+          <div class="main__user-variation"><span class="main__user-number"></span><span class="main__user-bc"></span></div>    
+        </div>
+    <!-- --------------------------------------------------------------------- -->
+        <div class="main__modal-window hidden">
+          <button class="main__btn-close-modal-window">&times;</button>
+          <h2>Правила гри:</h2>
+          <ol>
+            <li>
+              1. Ви маєте вгадати чотирьохзначне число,яке містить 4 будь-які
+              цифри в проміжку від 0 до 9, які не повторюються.
+            </li>
+            <li>
+              2. Якщо в названому Вами та таємному числах є збіги в цифрах без
+              збігу з їх позиціями - це рахується за корову(одна) або
+              корови(декілька збігів), якщо ж збіги в цифрах збігаються з позиціями
+              таємного числа - рахується за бика(один) або биків(декілька збігів).
+            </li>
+          </ol>
+          <button class="main__btn-modal-window btn">Зрозуміло</button>
+        </div>
+        <div class="main__overlay hidden"></div>
+      </main>
+    </div>
+  <!-- --------------------------------------------------------------------- -->
+    <script src="script.js"></script>
+  </body>
+</html>
